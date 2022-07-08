@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Body from "./components/Body/Body";
 import Header from "./components/Header/Header";
@@ -18,12 +18,12 @@ function ExpensesApp() {
   };
 
   useEffect(() => {
-    handleGetExpenses();
+    // handleGetExpenses();
   }, []);
   return (
     <div className="expensesApp">
       <Header user={user} handleGetExpenses={handleGetExpenses} />
-      <Body user={user} setUser={setUser} expenses={expenses} handleGetExpenses={handleGetExpenses}/>
+      <Body user={user} setUser={setUser} expenses={expenses} handleGetExpenses={handleGetExpenses} />
     </div>
   );
 }
