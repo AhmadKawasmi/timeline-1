@@ -18,7 +18,7 @@ function ExpensesApp() {
   };
 
   useEffect(() => {
-    // handleGetExpenses();
+    handleGetExpenses();
   }, []);
   return (
     <div className="expensesApp">
