@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Button, Input } from "@material-ui/core";
 import MyTimeLine from "../Timeline/MyTimeLine";
 
 const Body = (props) => {
