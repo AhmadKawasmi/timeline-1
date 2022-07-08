@@ -1,4 +1,3 @@
-import { Button, Input } from "@material-ui/core";
 import React, { useState } from "react";
 import { addExpense } from "../../services/ApiManager";
 import "./style.css";
@@ -27,7 +26,7 @@ const Header = (props) => {
   return (
     <div className="header">
       Header - {user} <br />
-      <Input
+      <input
         autoFocus
         value={input.title}
         placeholder="title"
@@ -38,7 +37,7 @@ const Header = (props) => {
           }
         }}
       />
-      <Input
+      <input
         autoFocus
         value={input.category}
         placeholder="category"
@@ -49,7 +48,7 @@ const Header = (props) => {
           }
         }}
       />
-      <Input
+      <input
         autoFocus
         value={input.amount}
         placeholder="amount"
@@ -61,7 +60,7 @@ const Header = (props) => {
           }
         }}
       />
-      <Button onClick={handleClick}>click me</Button>
+      <button onClick={handleClick}>click me</button>
     </div>
   );
 };
