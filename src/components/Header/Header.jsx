@@ -25,7 +25,9 @@ const Header = (props) => {
   };
   return (
     <div className="header">
-      Header - {user} <br />
+        <div>
+            <h1>Expenses App</h1>
+        </div>
       <input
         autoFocus
         value={input.title}
@@ -60,7 +62,7 @@ const Header = (props) => {
           }
         }}
       />
-      <button onClick={handleClick}>click me</button>
+      <button className="submitBtn" onClick={handleClick}>Submit expense</button>
     </div>
   );
 };

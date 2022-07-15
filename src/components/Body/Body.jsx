@@ -8,7 +8,7 @@ const Body = (props) => {
 
   return (
     <div className="body">
-      Body - {user}
+      Body
       <br />
 
       <MyTimeLine expenses={expenses} title="my timeline" handleGetExpenses={handleGetExpenses}/>
